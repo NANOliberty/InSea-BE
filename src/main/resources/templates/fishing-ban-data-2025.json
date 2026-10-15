@@ -1,0 +1,699 @@
+{
+  "year": 2025,
+  "lastUpdated": "2025-01-01T00:00:00",
+  "fishBanPeriods": [
+    {
+      "koreanName": "대구",
+      "scientificName": "Gadus macrocephalus",
+      "startDate": "01-16",
+      "endDate": "02-15",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 35,
+      "description": "1월 16일-2월 15일 포획금지, 35센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "문치가자미",
+      "scientificName": "Pleuronectes yokohamae",
+      "startDate": "12-01",
+      "endDate": "01-31",
+      "crossYear": true,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 17,
+      "description": "12월 1일-다음해 1월 31일 포획금지, 17센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "참가자미",
+      "scientificName": "Pleuronectes herzensteini",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 17,
+      "description": "17센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "연어",
+      "scientificName": "Oncorhynchus keta",
+      "startDate": "10-01",
+      "endDate": "11-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "10월 1일-11월 30일 완전 포획금지"
+    },
+    {
+      "koreanName": "전어",
+      "scientificName": "Konosirus punctatus",
+      "startDate": "05-01",
+      "endDate": "07-15",
+      "crossYear": false,
+      "region": "전국(강원특별자치도, 경상북도 제외)",
+      "banType": "FULL_BAN",
+      "description": "5월 1일-7월 15일 완전 포획금지 (강원특별자치도, 경상북도 제외)"
+    },
+    {
+      "koreanName": "쥐노래미",
+      "scientificName": "Hexagrammos otakii",
+      "startDate": "11-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 20,
+      "description": "11월 1일-12월 31일 포획금지, 20센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "쥐노래미",
+      "scientificName": "Hexagrammos otakii",
+      "startDate": "11-15",
+      "endDate": "12-14",
+      "crossYear": false,
+      "region": "서해 특정해역(백령도 주변)",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 20,
+      "description": "서해 특정해역 11월 15일-12월 14일 포획금지"
+    },
+    {
+      "koreanName": "참홍어",
+      "scientificName": "Raja pulchra",
+      "startDate": "06-01",
+      "endDate": "07-15",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 42,
+      "description": "6월 1일-7월 15일 포획금지, 체반폭 42센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "참조기",
+      "scientificName": "Larimichthys polyactis",
+      "startDate": "07-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 15,
+      "description": "7월 1일-7월 31일 포획금지, 15센티미터 이하 연중 포획금지 (어획량 10% 미만 제외)"
+    },
+    {
+      "koreanName": "참조기",
+      "scientificName": "Larimichthys polyactis",
+      "startDate": "04-22",
+      "endDate": "08-10",
+      "crossYear": false,
+      "region": "근해자망어업(유자망)",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 15,
+      "description": "근해자망어업 중 유자망 사용시 4월 22일-8월 10일 포획금지"
+    },
+    {
+      "koreanName": "갈치",
+      "scientificName": "Trichiurus lepturus",
+      "startDate": "07-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "북위 33도 이북",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 18,
+      "description": "북위 33도 이북 해역 7월 1일-7월 31일 포획금지, 항문장 18센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "고등어",
+      "scientificName": "Scomber japonicus",
+      "startDate": "04-01",
+      "endDate": "04-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 21,
+      "description": "해양수산부장관 고시기간 포획금지, 21센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "말쥐치",
+      "scientificName": "Thamnaconus modestus",
+      "startDate": "05-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 18,
+      "description": "5월 1일-7월 31일 포획금지, 18센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "말쥐치",
+      "scientificName": "Thamnaconus modestus",
+      "startDate": "06-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "정치망어업, 연안어업, 구획어업",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 18,
+      "description": "정치망어업, 연안어업, 구획어업 6월 1일-7월 31일 포획금지"
+    },
+    {
+      "koreanName": "옥돔",
+      "scientificName": "Branchiostegus japonicus",
+      "startDate": "07-21",
+      "endDate": "08-20",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "7월 21일-8월 20일 완전 포획금지"
+    },
+    {
+      "koreanName": "명태",
+      "scientificName": "Theragra chalcogramma",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "연중 완전 포획금지"
+    },
+    {
+      "koreanName": "삼치",
+      "scientificName": "Scomberomorus niphonius",
+      "startDate": "05-01",
+      "endDate": "05-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "5월 1일-5월 31일 완전 포획금지"
+    },
+    {
+      "koreanName": "감성돔",
+      "scientificName": "Acanthopagrus schlegelii",
+      "startDate": "05-01",
+      "endDate": "05-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 25,
+      "description": "5월 1일-5월 31일 포획금지, 25센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "돌돔",
+      "scientificName": "Oplegnathus fasciatus",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 24,
+      "description": "24센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "참돔",
+      "scientificName": "Pagrus major",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 24,
+      "description": "24센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "넙치",
+      "scientificName": "Paralichthys olivaceus",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 35,
+      "description": "35센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "농어",
+      "scientificName": "Lateolabrax japonicus",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 30,
+      "description": "30센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "도루묵",
+      "scientificName": "Arctoscopus japonicus",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 11,
+      "description": "11센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "민어",
+      "scientificName": "Miichthys miiuy",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 33,
+      "description": "33센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "방어",
+      "scientificName": "Seriola quinqueradiata",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 30,
+      "description": "30센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "볼락",
+      "scientificName": "Sebastes inermis",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 15,
+      "description": "15센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "붕장어",
+      "scientificName": "Conger myriaster",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 35,
+      "description": "35센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "조피볼락",
+      "scientificName": "Sebastes schlegelii",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 23,
+      "description": "23센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "갯장어",
+      "scientificName": "Muraenesox cinereus",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 40,
+      "description": "40센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "미거지",
+      "scientificName": "Liparis ochotensis",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 40,
+      "description": "40센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "용가자미",
+      "scientificName": "Hippoglossoides pinetorum",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 17,
+      "description": "17센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "기름가자미",
+      "scientificName": "Glyptocephalus stelleri",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 17,
+      "description": "17센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "청어",
+      "scientificName": "Clupea pallasii",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 20,
+      "description": "20센티미터 이하 연중 포획금지"
+    }
+  ],
+  "crustaceanBanPeriods": [
+    {
+      "koreanName": "꽃게",
+      "scientificName": "Portunus trituberculatus",
+      "startDate": "06-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 6,
+      "description": "해양수산부장관 고시기간 포획금지, 갑폭 6.4센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "대게",
+      "scientificName": "Chionoecetes spp.",
+      "startDate": "06-01",
+      "endDate": "11-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 9,
+      "description": "6월 1일-11월 30일 포획금지, 9센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "대게",
+      "scientificName": "Chionoecetes spp.",
+      "startDate": "06-01",
+      "endDate": "10-31",
+      "crossYear": false,
+      "region": "동경131도30분 이동수역",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 9,
+      "description": "동경131도30분 이동수역 6월 1일-10월 31일 포획금지"
+    },
+    {
+      "koreanName": "대게",
+      "scientificName": "Chionoecetes spp.",
+      "startDate": "04-01",
+      "endDate": "07-20",
+      "crossYear": false,
+      "region": "강원 고성군 특정해역",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 9,
+      "description": "강원 고성군 특정해역 4월 1일-7월 20일 포획금지"
+    },
+    {
+      "koreanName": "대게",
+      "scientificName": "Chionoecetes spp.",
+      "startDate": "10-01",
+      "endDate": "11-30",
+      "crossYear": false,
+      "region": "강원 고성군 특정해역",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 9,
+      "description": "강원 고성군 특정해역 10월 1일-11월 30일 포획금지"
+    },
+    {
+      "koreanName": "대게",
+      "scientificName": "Chionoecetes spp.",
+      "startDate": "03-01",
+      "endDate": "04-30",
+      "crossYear": false,
+      "region": "동해 특정해역",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 9,
+      "description": "동해 특정해역 3월 1일-4월 30일 포획금지"
+    },
+    {
+      "koreanName": "붉은대게",
+      "scientificName": "Chionoecetes japonicus",
+      "startDate": "07-10",
+      "endDate": "08-25",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "7월 10일-8월 25일 완전 포획금지"
+    },
+    {
+      "koreanName": "붉은대게",
+      "scientificName": "Chionoecetes japonicus",
+      "startDate": "06-01",
+      "endDate": "07-10",
+      "crossYear": false,
+      "region": "강원특별자치도 연안자망어업",
+      "banType": "FULL_BAN",
+      "description": "강원특별자치도 연안자망어업 6월 1일-7월 10일 완전 포획금지"
+    },
+    {
+      "koreanName": "대하",
+      "scientificName": "Penaeus orientalis",
+      "startDate": "05-01",
+      "endDate": "06-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "5월 1일-6월 30일 완전 포획금지"
+    }
+  ],
+  "molluskBanPeriods": [
+    {
+      "koreanName": "새조개",
+      "scientificName": "Fulvia mutica",
+      "startDate": "06-16",
+      "endDate": "09-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "6월 16일-9월 30일 완전 포획금지"
+    },
+    {
+      "koreanName": "새조개",
+      "scientificName": "Fulvia mutica",
+      "startDate": "06-01",
+      "endDate": "09-30",
+      "crossYear": false,
+      "region": "부산, 울산, 경남, 전남, 제주",
+      "banType": "FULL_BAN",
+      "description": "부산, 울산, 경남, 전남, 제주 6월 1일-9월 30일 완전 포획금지"
+    },
+    {
+      "koreanName": "소라",
+      "scientificName": "Batillus cornutus",
+      "startDate": "06-01",
+      "endDate": "06-30",
+      "crossYear": false,
+      "region": "전라남도 여수시 삼산면",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 5,
+      "description": "전라남도 여수시 삼산면 6월 1일-6월 30일 포획금지, 각고 5센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "소라",
+      "scientificName": "Batillus cornutus",
+      "startDate": "06-01",
+      "endDate": "08-31",
+      "crossYear": false,
+      "region": "제주특별자치도",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 7,
+      "description": "제주특별자치도 6월 1일-8월 31일 포획금지, 각고 7센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "소라",
+      "scientificName": "Batillus cornutus",
+      "startDate": "07-01",
+      "endDate": "08-31",
+      "crossYear": false,
+      "region": "제주시 추자면 추자도",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 7,
+      "description": "제주시 추자면 추자도 7월 1일-8월 31일 포획금지, 각고 7센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "소라",
+      "scientificName": "Batillus cornutus",
+      "startDate": "06-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "경상북도 울릉군",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 7,
+      "description": "경상북도 울릉군 6월 1일-7월 31일 포획금지, 각고 7센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "전복",
+      "scientificName": "Haliotis spp.",
+      "startDate": "09-01",
+      "endDate": "10-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 7,
+      "description": "9월 1일-10월 31일 포획금지, 각장 7센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "전복",
+      "scientificName": "Haliotis spp.",
+      "startDate": "10-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "제주특별자치도",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 10,
+      "description": "제주특별자치도 10월 1일-12월 31일 포획금지, 각장 10센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "코끼리조개",
+      "scientificName": "Panopea japonica",
+      "startDate": "05-01",
+      "endDate": "06-30",
+      "crossYear": false,
+      "region": "강원특별자치도, 경상북도",
+      "banType": "FULL_BAN",
+      "description": "강원특별자치도, 경상북도 5월 1일-6월 30일 완전 포획금지"
+    },
+    {
+      "koreanName": "키조개",
+      "scientificName": "Atrina pectinata",
+      "startDate": "07-01",
+      "endDate": "08-31",
+      "crossYear": false,
+      "region": "부산, 울산, 강원, 경북, 경남",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 18,
+      "description": "7월 1일-8월 31일 포획금지, 부산, 울산, 강원, 경북, 경남산 각장 18센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "가리비",
+      "scientificName": "Patinopecten yessoensis",
+      "startDate": "03-01",
+      "endDate": "06-30",
+      "crossYear": false,
+      "region": "특정해역",
+      "banType": "FULL_BAN",
+      "description": "특정해역 3월 1일-6월 30일 완전 포획금지"
+    },
+    {
+      "koreanName": "오분자기",
+      "scientificName": "Sulculus diversicolor",
+      "startDate": "07-01",
+      "endDate": "08-31",
+      "crossYear": false,
+      "region": "제주특별자치도",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 4,
+      "description": "제주특별자치도 7월 1일-8월 31일 포획금지, 각장 4센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "기수재첩",
+      "scientificName": "Corbicula japonica",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 1,
+      "description": "각장 1.5센티미터 이하 연중 포획금지"
+    }
+  ],
+  "seaweedBanPeriods": [
+    {
+      "koreanName": "넓미역",
+      "scientificName": "Undariopsis peterseniana",
+      "startDate": "09-01",
+      "endDate": "11-30",
+      "crossYear": false,
+      "region": "제주특별자치도",
+      "banType": "FULL_BAN",
+      "description": "제주특별자치도 9월 1일-11월 30일 완전 포획금지"
+    },
+    {
+      "koreanName": "우뭇가사리",
+      "scientificName": "Gelidium amansii",
+      "startDate": "11-01",
+      "endDate": "03-31",
+      "crossYear": true,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "11월 1일-다음해 3월 31일 완전 포획금지"
+    },
+    {
+      "koreanName": "톳",
+      "scientificName": "Hizikia fusiformis",
+      "startDate": "10-01",
+      "endDate": "01-31",
+      "crossYear": true,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "10월 1일-다음해 1월 31일 완전 포획금지"
+    }
+  ],
+  "otherMarineBanPeriods": [
+    {
+      "koreanName": "해삼",
+      "scientificName": "Stichopus japonicus",
+      "startDate": "07-01",
+      "endDate": "07-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "7월 1일-7월 31일 완전 포획금지"
+    },
+    {
+      "koreanName": "살오징어",
+      "scientificName": "Todarodes pacificus",
+      "startDate": "04-01",
+      "endDate": "05-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 15,
+      "description": "4월 1일-5월 31일 포획금지, 외투장 15센티미터 이하 연중 포획금지"
+    },
+    {
+      "koreanName": "낙지",
+      "scientificName": "Octopus minor",
+      "startDate": "06-01",
+      "endDate": "06-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "6월 1일-6월 30일 완전 포획금지 (시도지사 별도 고시 가능)"
+    },
+    {
+      "koreanName": "쭈꾸미",
+      "scientificName": "Amphioctopus fangsiao",
+      "startDate": "05-11",
+      "endDate": "08-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "5월 11일-8월 31일 완전 포획금지"
+    },
+    {
+      "koreanName": "참문어",
+      "scientificName": "Octopus vulgaris",
+      "startDate": "05-16",
+      "endDate": "06-30",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "FULL_BAN",
+      "description": "5월 16일-6월 30일 완전 포획금지 (시도지사 별도 고시 가능)"
+    },
+    {
+      "koreanName": "대문어",
+      "scientificName": "Octopus dofleini",
+      "startDate": "01-01",
+      "endDate": "12-31",
+      "crossYear": false,
+      "region": "전국",
+      "banType": "SIZE_RESTRICTION",
+      "minSize": 600,
+      "description": "600그램 이하 연중 포획금지"
+    }
+  ]
+}
