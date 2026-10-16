@@ -65,6 +65,11 @@ public class ReviewService {
      * 리뷰 작성 - 삭제된 리뷰 재활용 방식
     */
     public Review createReview(Long placeId, User user, Integer rating, String title, String content, List<String> imageUrls) {
+        // 평점 유효성 검사 (재활용·신규 공통)
+        if (rating < 1 || rating > 5) {
+            throw new IllegalArgumentException("평점은 1-5 사이여야 합니다.");
+        }
+
         // 1. 기존 삭제된 리뷰가 있는지 확인
         Optional<Review> existingDeletedReview = reviewRepository.findByPlaceIdAndUserIdAndStatus(
             placeId, user.getUserId(), Review.ReviewStatus.DELETED);
@@ -73,8 +78,6 @@ public class ReviewService {
             // 삭제된 리뷰를 재활용
             Review review = existingDeletedReview.get();
             
-            // 기존 평점 저장 (통계 업데이트용)
-            Integer oldRating = review.getRating();
             
             // 리뷰 정보 업데이트
             review.setStatus(Review.ReviewStatus.ACTIVE);
@@ -91,8 +94,8 @@ public class ReviewService {
             
             // Place 통계 업데이트 (기존 삭제된 평점 제거하고 새 평점 추가)
             Place place = review.getPlace();
-            place.removeReview(oldRating); // 기존 평점 제거
-            place.addReview(rating);       // 새 평점 추가
+            // 기존 평점은 deleteReview() 시점에 이미 removeReview()로 빠져 있으므로 새 평점만 추가한다
+            place.addReview(rating);
             placeRepository.save(place);
             
             return savedReview;
@@ -107,10 +110,6 @@ public class ReviewService {
         Place place = placeRepository.findById(placeId)
                 .orElseThrow(() -> new IllegalArgumentException("존재하지 않는 장소입니다."));
         
-        // 평점 유효성 검사
-        if (rating < 1 || rating > 5) {
-            throw new IllegalArgumentException("평점은 1-5 사이여야 합니다.");
-        }
         
         Review review = Review.builder()
                 .place(place)
@@ -141,6 +140,11 @@ public class ReviewService {
         // 리뷰 작성자인지 확인
         if (!review.getUser().getUserId().equals(user.getUserId())) {
             throw new IllegalStateException("리뷰 작성자만 수정할 수 있습니다.");
+        }
+
+        // 삭제된 리뷰는 수정 불가 (수정하면 Place 통계가 어긋난다)
+        if (review.getStatus() != Review.ReviewStatus.ACTIVE) {
+            throw new IllegalStateException("삭제된 리뷰는 수정할 수 없습니다.");
         }
         
         // 평점 유효성 검사
@@ -176,6 +180,11 @@ public class ReviewService {
         // 리뷰 작성자인지 확인
         if (!review.getUser().getUserId().equals(user.getUserId())) {
             throw new IllegalStateException("리뷰 작성자만 삭제할 수 있습니다.");
+        }
+
+        // 이미 삭제된 리뷰를 다시 삭제하면 Place 통계가 반복 차감되므로 막는다
+        if (review.getStatus() != Review.ReviewStatus.ACTIVE) {
+            throw new IllegalStateException("이미 삭제된 리뷰입니다.");
         }
         
         // 소프트 삭제
