@@ -29,6 +29,8 @@ src/main/java/checkmate/insea/
 └── image/       Cloudinary 업로드·삭제·썸네일
 src/main/resources/templates/
 └── fishing-ban-data-2025.json   국립수산과학원 금어기 규정(2025.01 시행)을 직접 JSON으로 변환한 데이터
+src/test/java/checkmate/insea/review/
+└── PlaceRatingStatsTest · ReviewServiceStatsTest   평점 통계 증감·상태 전이 회귀 테스트 (2026-10 추가)
 ```
 
 전체 앱 구조(비공개 부분 포함): `map`(TourAPI·카카오맵) · `weather`(기상청·바다누리) · `fishing_tip` · `config`(Security·JWT)
@@ -61,8 +63,8 @@ Cloudinary에 올리고, 썸네일은 서버 API 대신 URL 변환(`w_150,h_150,
 
 ## 알고 있는 한계
 
-- 백과사전 동기화가 단일 트랜잭션의 15분짜리 동기 루프다. 팀원이 비동기로 바꾼 커밋이 있었는데 마지막 머지에서 덮여 사라졌다. `@Async` + 페이지 단위 트랜잭션으로 고쳐야 한다.
-- 테스트가 DB 연결 확인용 몇 개뿐이다. 리뷰 재활용처럼 상태 전이가 있는 로직부터 붙여야 한다.
+- 백과사전 동기화의 비동기 전환이 검증되지 않았다. 처음 짠 버전은 단일 트랜잭션 안의 동기 루프였고(약 15분), 제출본은 팀원이 `@Async` + `CompletableFuture`로 바꾼 페이지 단위 `fetchAndSavePage()`를 호출한다. 그런데 같은 클래스 안에서 자기 메서드를 직접 부르는 구조라 Spring 프록시가 적용되지 않아 `@Async`도 페이지별 `@Transactional`도 실제로는 동작하지 않을 가능성이 크고, `join()`으로 끝까지 기다리므로 요청도 그동안 잡힌다. 수집기를 별도 빈으로 분리하고 작업 ID를 즉시 반환한 뒤 진행률을 조회하는 구조로 고쳐야 한다.
+- 리뷰 삭제 → 재작성 시 장소 평점 통계가 이중 차감되는 버그가 있었다(삭제 때 뺀 평점을 재작성 때 한 번 더 뺌). 2026-10 코드 재검토에서 발견해 수정했고 `src/test/java/checkmate/insea/review/`에 회귀 테스트를 넣었다. 개발 당시에는 테스트가 DB 연결 확인용 몇 개뿐이었다.
 - 설정 파일에 API 키가 커밋된 채 개발했다. 출시 1년 뒤 공개하려고 전체 이력을 다시 썼다. 첫 커밋부터 환경변수로.
 
 ## 타임라인
